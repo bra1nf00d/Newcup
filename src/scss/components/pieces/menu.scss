@@ -1,0 +1,54 @@
+.menu {
+	@extend %touch-area;
+
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+
+	&__title {
+		font-family: $font-family-poppins;
+		font-weight: 500;
+		font-size: em(11);
+		letter-spacing: em(2.75);
+		text-transform: uppercase;
+	}
+
+	&__icon {
+		font-size: em(9);
+		margin-left: em(15);
+	}
+
+	&__collapse {
+		@extend %position-fixed;
+
+		cursor: auto;
+		top: 0;
+		height: 100%;
+		z-index: -1;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		margin-top: em(12);
+		overflow: scroll;
+	}
+
+	&__item {
+		margin: em(12) 0;
+	}
+
+	&__link {
+		@extend %touch-area;
+
+		color: $color-default;
+		font-family: $font-family-montserrat;
+		font-weight: 800;
+		font-size: em(18);
+		line-height: em(40);
+		text-transform: uppercase;
+	}
+}

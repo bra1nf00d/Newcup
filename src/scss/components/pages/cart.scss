@@ -1,0 +1,14 @@
+.cart {
+	padding-bottom: em($segue-height + 20);
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: em(-7.5) em(-2.5);
+	}
+
+	&__column {
+		flex: 0 0 100%;
+		padding: em(7.5) em(2.5);
+	}
+}

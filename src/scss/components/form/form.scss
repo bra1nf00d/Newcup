@@ -1,0 +1,48 @@
+.form {
+	&__inner {
+		box-shadow: 0 em(4) em(15) rgba(0, 0, 0, 0.15);
+		border-radius: em(15);
+		padding: em(34) em(24);
+		background: $color-white;
+	}
+
+	&__control {
+		display: flex;
+		flex-direction: column;
+		border-bottom: em(1.5) solid #DBDBDB;
+		margin-bottom: em(38);
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	&__label {
+		color: #989898;
+		margin-bottom: em(10);
+		font-family: $font-family-roboto;
+		font-weight: 400;
+		font-size: em(14);
+		line-height: em(16);
+	}
+
+	&__input {
+		height: em(32);
+
+		font-family: $font-family-roboto;
+		font-weight: 400;
+		font-size: em(16);
+		line-height: em(19);
+	}
+
+	&__textarea {
+		resize: vertical;
+		font-family: $font-family-roboto;
+		font-weight: 400;
+		font-size: em(16);
+		line-height: em(19);
+	}
+
+	&__select {
+	}
+}

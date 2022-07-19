@@ -1,0 +1,18 @@
+.products {
+	padding-bottom: em($tabbar-height);
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: em(-10) em(-5);
+	}
+
+	&__column {
+		flex: 0 0 50%;
+		padding: em(10) em(5);
+
+		@include breakpoint($screen-md) {
+			flex: 0 0 100%;
+		}
+	}
+}

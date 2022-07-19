@@ -1,0 +1,136 @@
+.category-card {
+	$z-indexes: (
+		'inner': 1,
+		'image': -1,
+		'fade': -1,
+		'aside': -2,
+		'border': -1,
+	);
+	$card-height: 122%;
+
+	position: relative;
+
+	&__aside-content {
+		$block-brand: '.card-aside-content__brand';
+
+		position: absolute;
+		top: em(28);
+		left: 0;
+		z-index: map-get($z-indexes, 'aside');
+
+		#{$block-brand} span {
+			font-size: em(25);
+		}
+	}
+
+	&__bottom-content {
+		$content-height: 126px;
+
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: em($content-height);
+		padding: em(16) em(16) em(34) em(24);
+		color: $color-white;
+
+		&-fade {
+			@extend %position-fill;
+
+			background: #262628;
+			opacity: 0.7;
+			z-index: map-get($z-indexes, 'fade');
+		}
+	}
+
+	&__inner {
+		@extend %position-fill;
+
+		cursor: pointer;
+		overflow: hidden;
+		z-index: map-get($z-indexes, 'inner');
+	}
+
+	&__image {
+		padding-bottom: $card-height;
+		z-index: map-get($z-indexes, 'image');
+	}
+
+	&__border {
+		@extend %position-fill;
+
+		$line-gradient: linear-gradient(90deg,
+			rgba(255,255,255,1) 0%,
+			rgba(255,255,255,1) 95%,
+			rgba(0,0,0,1) 95%,
+			rgba(0,0,0,1) 100%);
+		$border-weight: 2px;
+
+		z-index: map-get($z-indexes, 'border');
+
+		span {
+			position: absolute;
+			top: em(10);
+			left: em(13);
+			right: em(-17);
+			bottom: em(12);
+		}
+
+		// Top-bottom border
+		span:first-child {
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: em($border-weight);
+				background: $color-white;
+				background: $line-gradient;
+			}
+
+			&:before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: em($border-weight);
+				background: $color-white;
+				background: $line-gradient;
+			}
+		}
+
+		// Left-right border
+		span:last-child {
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: em($border-weight);
+				height: 100%;
+				background: $color-white;
+			}
+		}
+
+		span:last-child {
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: em($border-weight);
+				height: 100%;
+				background: #000;
+			}
+		}
+	}
+}
+
+.category-title {
+	font-family: $font-family-montserrat;
+	font-weight: 800;
+	font-size: em(30);
+	line-height: em(22);
+}

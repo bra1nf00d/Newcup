@@ -1,0 +1,19 @@
+.order-success {
+	margin-top: em(16);
+
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		// section-margin -- 16px
+		// + header-height -- 54px
+		// + copyright-padding -- 32px
+		// + container-margin -- 16px
+		// = 118px
+		height: 100%;
+		min-height: calc(var(--vh, 1vh) * 100 - 118px);
+	}
+
+	&__frame-success {
+	}
+}

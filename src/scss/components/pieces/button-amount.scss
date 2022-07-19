@@ -1,0 +1,40 @@
+.button-amount {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__number {
+		font-family: $font-family-roboto;
+		font-weight: 700;
+		font-size: em(13);
+	}
+
+	&__icon {
+		@extend %touch-area;
+
+		display: flex;
+		align-items: center;
+
+		i {
+			$icon-size: 20px;
+
+			position: relative;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			width: em($icon-size * 1.85);
+			height: em($icon-size * 1.85);
+			font-size: em($icon-size / 2.3);
+			z-index: 1;
+
+			&:after {
+				@extend %position-fill;
+
+				content: '';
+				background: $color-primary;
+				border-radius: 100%;
+				z-index: -1;
+			}
+		}
+	}
+}

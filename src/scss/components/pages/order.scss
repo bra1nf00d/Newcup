@@ -1,0 +1,26 @@
+.order {
+	$section-width: 375px;
+
+	max-width: $section-width;
+	margin: 0 auto;
+
+	&__form {
+		margin-bottom: em(17);
+	}
+
+	&__offer {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: em(17);
+
+		font-family: $font-family-roboto;
+		font-weight: 500;
+		font-size: em(14);
+		line-height: em(16);
+	}
+
+	&__summary {
+		padding-bottom: em(89);
+		margin: 0 auto;
+	}
+}

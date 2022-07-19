@@ -1,0 +1,27 @@
+// Base Styles
+$base-font-size					: 16px;
+$base-font-weight				: 400;
+
+// Sizes
+$layout-width					: 600px;
+$layout-spacing 				: 15px;
+$header-height					: 54px;
+$tabbar-height					: 86px;
+$segue-height					: 65px;
+
+// Breakpoints
+$screen-xs						: 320px;
+$screen-sm						: 375px;
+$screen-md						: 480px;
+$screen-lg						: $layout-width;
+
+// Fonts
+$font-family-roboto				: 'Roboto', sans-serif;
+$font-family-montserrat			: 'Montserrat', sans-serif;
+$font-family-poppins			: 'Poppins', sans-serif;
+
+// Main Palette
+$color-default					: #262628;
+$color-white					: #FFFFFF;
+$color-primary					: #E0FF0A;
+$color-required					: #D90955;

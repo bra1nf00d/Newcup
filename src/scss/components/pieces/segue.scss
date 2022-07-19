@@ -1,0 +1,40 @@
+.segue {
+	@extend %position-fixed;
+	bottom: 0;
+	z-index: 99;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: em($segue-height);
+		background: $color-white;
+		border-radius: em(20) em(20) 0 0;
+		box-shadow: 0 em(-2) em(10) rgba(0, 0, 0, 0.1);
+		padding: em(14) em(18) em(16) em(25);
+	}
+
+	&__price {
+		font-family: $font-family-roboto;
+		font-weight: 700;
+		font-size: em(18);
+		line-height: em(21);
+	}
+
+	&__button {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+
+		color: $color-primary;
+		padding: em(12) em(34);
+		background: #131314;
+		box-shadow: 0 em(4) em(12) rgba(0, 0, 0, 0.15);
+		border-radius: em(100);
+
+		font-family: $font-family-roboto;
+		font-weight: 500;
+		font-size: em(16);
+		line-height: em(19);
+	}
+}

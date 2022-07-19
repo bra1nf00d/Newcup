@@ -1,0 +1,98 @@
+{{#[helpers/layout] htmlWebpackPlugin}}
+
+    <div class="page-article">
+        <h1 class="page-article__title">Оформлення</h1>
+    </div>
+
+    <div class="order">
+        <form class="order__form form">
+            <div class="form__inner">
+                <div class="form__control">
+                    <label for="control-1" class="form__label">
+                        <span class="required__mark">*</span>
+                        Ваше ім'я
+                    </label>
+                    <input id="control-1" name="name" type="text" class="form__input required">
+                </div>
+                <div class="form__control">
+                    <label for="control-2" class="form__label">
+                        <span class="required__mark">*</span>
+                        Введіть Ваш номер телефону
+                    </label>
+                    <input id="control-2" name="phone" type="tel" class="form__input required">
+                </div>
+                <div class="form__control">
+                    <div class="form__label">Тип доставки</div>
+                    <div class="form__select select">
+                        <input name="shipping_type" type="hidden" class="select__input">
+                        <button type="button" class="select__current">
+                            Адресна доставка
+                        </button>
+                        <div class="select__list">
+                            <button data-value="One" type="button" class="select__item">One</button>
+                            <button data-value="Two" type="button" class="select__item">Two</button>
+                            <button data-value="Three" type="button" class="select__item">Three</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__control">
+                    <div class="form__label">
+                        <span class="required__mark">*</span>
+                        Адреса самовивозу
+                    </div>
+                    <div class="form__select select">
+                        <input name="shipping_address" type="hidden" class="select__input required">
+                        <button type="button" class="select__current">
+                            Factory (вул.Соборна 90б/4)
+                        </button>
+                        <div class="select__list">
+                            <button data-value="One" type="button" class="select__item">One</button>
+                            <button data-value="Two" type="button" class="select__item">Two</button>
+                            <button data-value="Three" type="button" class="select__item">Three</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__control">
+                    <label for="control-5" class="form__label">Час</label>
+                    <input id="control-5" name="time" type="text" class="form__input" readonly>
+                </div>
+                <div class="form__control">
+                    <label for="control-6" class="form__label">Комментар</label>
+                    <textarea id="control-6" name="comment" class="form__textarea"></textarea>
+                </div>
+            </div>
+        </form>
+        <span class="order__offer">
+            Бесплатная доставка от 250 грн.
+        </span>
+        <div class="order__summary order-summary">
+            <div class="order-summary__inner">
+                <div class="order-summary__line">
+                    Товары (3)
+                    <span>₴598.86</span>
+                </div>
+                <div class="order-summary__line">
+                    Доставка
+                    <span>₴50.00</span>
+                </div>
+                <div class="order-summary__dotted-line"></div>
+                <div class="order-summary__total">
+                    Итого
+                    <span>$766.86</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="segue">
+        <div class="segue__inner">
+            <span class="segue__price">
+                Всего:1 542 ₴
+            </span>
+            <button id="order-button-submit" class="segue__button">
+                Заказать
+            </button>
+        </div>
+    </div>
+
+{{/[helpers/layout]}}

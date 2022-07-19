@@ -1,0 +1,80 @@
+// Families Fonts
+@include font-face("Montserrat", "Montserrat-Bold", 700);
+@include font-face("Montserrat", "Montserrat-Regular", 400);
+@include font-face("Montserrat", "Montserrat-SemiBold", 600);
+@include font-face("Poppins", "Poppins-Medium", 500);
+@include font-face("Poppins", "Poppins-Bold", 700);
+@include font-face("Roboto", "Roboto-Black", 900);
+@include font-face("Roboto", "Roboto-Bold", 700);
+@include font-face("Roboto", "Roboto-Medium", 500);
+@include font-face("Roboto", "Roboto-Regular", 400);
+@include font-face("Montserrat", "Montserrat-ExtraBold", 700);
+@include font-face("Montserrat", "Montserrat-Medium", 500);
+
+// Icon Set
+@include font-face("icon", "icon", normal);
+
+[class^="i-"], [class*=" i-"] {
+	font-family: "icon" !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.i-cart:before {
+	content: "\e900";
+}
+
+.i-chat:before {
+	content: "\e901";
+}
+
+.i-info:before {
+	content: "\e902";
+}
+
+.i-check:before {
+	content: "\e903";
+}
+
+.i-plus-outline:before {
+	content: "\e904";
+}
+
+.i-close-outline:before {
+	content: "\e905";
+}
+
+.i-close:before {
+	content: "\e906";
+}
+
+.i-filter:before {
+	content: "\e907";
+}
+
+.i-refresh:before {
+	content: "\e908";
+}
+
+.i-mark:before {
+	content: "\e909";
+}
+
+.i-menu:before {
+	content: "\e90a";
+}
+
+.i-minus:before {
+	content: "\e90b";
+}
+
+.i-plus:before {
+	content: "\e90c";
+}

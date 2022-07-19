@@ -1,0 +1,44 @@
+{{#[helpers/layout] htmlWebpackPlugin}}
+
+    <div class="page-article">
+        <h1 class="page-article__title">Корзина</h1>
+    </div>
+
+    <div class="cart">
+        <div class="cart__row">
+            <div class="cart__column">
+                {{> components/pieces/cart-item.hbs}}
+            </div>
+            <div class="cart__column">
+                {{> components/pieces/cart-item.hbs}}
+            </div>
+            <div class="cart__column">
+                {{> components/pieces/cart-item.hbs}}
+            </div>
+            <div class="cart__column">
+                {{> components/pieces/cart-item.hbs}}
+            </div>
+            <div class="cart__column">
+                {{> components/pieces/cart-item.hbs}}
+            </div>
+            <div class="cart__column">
+                {{> components/pieces/cart-item.hbs}}
+            </div>
+            <div class="cart__column">
+                {{> components/pieces/cart-item.hbs}}
+            </div>
+        </div>
+    </div>
+
+    <div class="segue">
+        <div class="segue__inner">
+            <span class="segue__price">
+                Всего:1 542 ₴
+            </span>
+            <a href="./order.html" class="segue__button">
+                Оформить
+            </a>
+        </div>
+    </div>
+
+{{/[helpers/layout]}}

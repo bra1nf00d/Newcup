@@ -1,0 +1,47 @@
+.select {
+	position: relative;
+
+	&__input {
+		display: none;
+	}
+
+	&__current {
+		padding: em(9) 0;
+		width: 100%;
+		text-align: left;
+
+		font-family: $font-family-roboto;
+		font-weight: 400;
+		font-size: em(16);
+		line-height: em(18);
+	}
+
+	&__list {
+		position: absolute;
+		top: em(37);
+		left: 0;
+		display: none;
+		width: 100%;
+		padding: 0 0 em(14) 0;
+		background: $color-white;
+		z-index: 99;
+		overflow: hidden;
+	}
+
+	&__item {
+		$color-hover: #DBDBDB;
+
+		display: inline-block;
+		width: 100%;
+		padding: em(4.5) 0;
+		text-align: left;
+
+		font-family: $font-family-roboto;
+		font-weight: 400;
+		font-size: em(16);
+
+		&:hover {
+			background: $color-hover;
+		}
+	}
+}

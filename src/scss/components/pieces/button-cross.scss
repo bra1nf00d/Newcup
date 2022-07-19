@@ -1,0 +1,19 @@
+.button-cross {
+	@extend %touch-area;
+
+	display: inline-flex;
+	align-items: center;
+
+	&__icon {
+		$icon-size: 19px;
+
+		position: relative;
+		width: em($icon-size);
+		height: em($icon-size);
+
+		i {
+			@extend %position-center;
+			font-size: em($icon-size);
+		}
+	}
+}

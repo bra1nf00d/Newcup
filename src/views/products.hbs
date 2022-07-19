@@ -1,0 +1,109 @@
+{{#[helpers/layout] htmlWebpackPlugin}}
+
+    <div class="page-article">
+        <h1 class="page-article__title">Свіже м'ясо та субпродукти</h1>
+
+        <div class="filter">
+            <button class="filter__icon">
+                <i class="i-filter"></i>
+            </button>
+            <nav class="filter__collapse hidden">
+                <ul class="filter__list">
+                    <li class="filter__item">
+                        <a href="#" class="filter__link">
+                            <i class="i-mark"></i>
+                            Свіже м'ясо та субпродукти
+                        </a>
+                    </li>
+                    <li class="filter__item">
+                        <a href="#" class="filter__link">
+                            <i class="i-mark"></i>
+                            Риба та морепродукти
+                        </a>
+                    </li>
+                    <li class="filter__item">
+                        <a href="#" class="filter__link">
+                            <i class="i-mark"></i>
+                            Наше Виробництво
+                        </a>
+                    </li>
+                    <li class="filter__item">
+                        <a href="#" class="filter__link">
+                            <i class="i-mark"></i>
+                            Кулінарія
+                        </a>
+                    </li>
+                    <li class="filter__item">
+                        <a href="#" class="filter__link">
+                            <i class="i-mark"></i>
+                            Бакалія
+                        </a>
+                    </li>
+                    <li class="filter__item">
+                        <a href="#" class="filter__link">
+                            <i class="i-mark"></i>
+                            Копчена та варена продукція
+                        </a>
+                    </li>
+                    <li class="filter__item">
+                        <a href="#" class="filter__link">
+                            <i class="i-mark"></i>
+                            Риба та морепродукти
+                        </a>
+                    </li>
+                    <li class="filter__item">
+                        <a href="#" class="filter__link">
+                            <i class="i-mark"></i>
+                            Наше Виробництво
+                        </a>
+                    </li>
+                    <li class="filter__item">
+                        <a href="#" class="filter__link">
+                            <i class="i-mark"></i>
+                            Кулінарія
+                        </a>
+                    </li>
+                    <li class="filter__item">
+                        <a href="#" class="filter__link">
+                            <i class="i-mark"></i>
+                            Бакалія
+                        </a>
+                    </li>
+                    <li class="filter__item">
+                        <a href="#" class="filter__link">
+                            <i class="i-mark"></i>
+                            Копчена та варена продукція
+                        </a>
+                    </li>
+                </ul>
+                <div class="filter__button-close">
+                    <button class="button-cross">
+                    <span class="button-cross__icon">
+                        <i class="i-close-outline"></i>
+                    </span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="products__row">
+            <div class="products__column">
+                {{> components/pieces/product-card.hbs}}
+            </div>
+            <div class="products__column">
+                {{> components/pieces/product-card.hbs}}
+            </div>
+            <div class="products__column">
+                {{> components/pieces/product-card.hbs}}
+            </div>
+            <div class="products__column">
+                {{> components/pieces/product-card.hbs}}
+            </div>
+        </div>
+    </div>
+
+    {{> components/navigation/tabbar.hbs}}
+
+{{/[helpers/layout]}}

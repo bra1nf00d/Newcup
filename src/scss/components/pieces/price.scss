@@ -1,0 +1,20 @@
+.price {
+	display: inline-flex;
+	flex-direction: column;
+
+	&__old {
+		font-family: $font-family-roboto;
+		font-weight: 500;
+		font-size: em(10);
+		line-height: em(16);
+		text-decoration-line: line-through;
+		opacity: 0.7;
+	}
+
+	&__sale {
+		font-family: $font-family-roboto;
+		font-weight: 900;
+		font-size: em(16);
+		line-height: em(21);
+	}
+}

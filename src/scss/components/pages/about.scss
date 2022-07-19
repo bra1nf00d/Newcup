@@ -1,0 +1,23 @@
+.about {
+	margin-top: em(52);
+
+	b {
+		display: inline-block;
+		margin-bottom: em(25);
+
+		font-family: $font-family-montserrat;
+		font-weight: 600;
+		font-size: em(16);
+		line-height: em(21);
+	}
+
+	p {
+		display: inline-block;
+		margin-bottom: em(20);
+
+		font-family: $font-family-montserrat;
+		font-weight: 400;
+		font-size: em(14);
+		line-height: em(29);
+	}
+}

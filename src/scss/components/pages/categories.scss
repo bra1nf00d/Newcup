@@ -1,0 +1,23 @@
+.categories {
+	margin-top: em(21);
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: em(-10) em(-10);
+
+		@include breakpoint($screen-sm) {
+			margin: em(-10) em(-5);
+		}
+	}
+
+	&__column {
+		flex: 0 0 33.333%;
+		padding: em(10) em(10);
+
+		@include breakpoint($screen-md) {
+			flex: 0 0 50%;
+			padding: em(10) em(5);
+		}
+	}
+}

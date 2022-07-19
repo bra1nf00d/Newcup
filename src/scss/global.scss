@@ -1,0 +1,110 @@
+// Style Utils
+@import "utils/mixins";
+@import "utils/variables";
+@import "utils/functions";
+@import "utils/extends";
+@import "utils/fonts";
+@import "utils/reset";
+
+// Styled Components
+@import "components/navigation/header";
+@import "components/navigation/tabbar";
+
+// Styled Form
+@import "components/form/form";
+@import "components/form/select";
+
+// Styled Pages
+@import "components/pages/products";
+@import "components/pages/cart";
+@import "components/pages/categories";
+@import "components/pages/order";
+@import "components/pages/order-success";
+@import "components/pages/about";
+
+// Styled Pieces
+@import "components/pieces/menu";
+@import "components/pieces/product-card";
+@import "components/pieces/category-card";
+@import "components/pieces/cart-item";
+@import "components/pieces/content-grid";
+@import "components/pieces/card-aside-content";
+@import "components/pieces/titles";
+@import "components/pieces/price";
+@import "components/pieces/button-add";
+@import "components/pieces/button-info";
+@import "components/pieces/button-amount";
+@import "components/pieces/button-cross";
+@import "components/pieces/radio-modifiers";
+@import "components/pieces/checkbox-modifiers";
+@import "components/pieces/order-summary";
+@import "components/pieces/frame-success";
+@import "components/pieces/copyright";
+@import "components/pieces/filter";
+@import "components/pieces/page-article";
+@import "components/pieces/segue";
+@import "components/pieces/app-background";
+
+html, body {
+	height: 100%;
+}
+
+body {
+	color: $color-default;
+	font-family: $font-family-roboto;
+	font-weight: $base-font-weight;
+	font-size: $base-font-size;
+	line-height: 1;
+}
+
+:root {
+	--vh: 1vh;
+}
+
+.mobile-layout {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 em($layout-spacing);
+	max-width: $layout-width;
+	min-height: 100%;
+	z-index: 1;
+	overflow: hidden;
+}
+
+// Styled Data-attributes
+div[data-responsive-image] {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+
+	& img {
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.error {
+	color: $color-required;
+}
+
+.lock {
+	overflow: hidden;
+}
+
+.required__mark {
+	color: $color-required;
+}

@@ -1,0 +1,37 @@
+.button-add {
+	@extend %touch-area;
+
+	display: inline-flex;
+	align-items: center;
+
+	&__title {
+		font-family: $font-family-montserrat;
+		font-weight: 700;
+		font-size: em(13);
+	}
+
+	&__icon {
+		$icon-size: 20px;
+
+		position: relative;
+		width: em($icon-size);
+		height: em($icon-size);
+		margin-left: em(8);
+		z-index: 1;
+
+		&:after {
+			@extend %position-fill;
+
+			content: '';
+			background: $color-primary;
+			border-radius: 100%;
+			z-index: -1;
+		}
+
+		i {
+			@extend %position-center;
+
+			font-size: em($icon-size / 2.3);
+		}
+	}
+}

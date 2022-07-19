@@ -1,0 +1,29 @@
+.cart-item {
+	$item-height: 130px;
+	$item-width: 345px;
+
+	position: relative;
+	margin: 0 auto;
+	max-width: $item-width;
+	height: em($item-height);
+	border-radius: em(15);
+	box-shadow: 0 em(4) em(15) rgba(0, 0, 0, 0.15);
+	background: $color-white;
+	overflow: hidden;
+
+	&__content {
+		@extend %position-fill;
+
+		padding: em(18) em(16) em(25) em(14);
+	}
+
+	&__content-grid {
+		$button-amount: '.button-amount';
+
+		height: 100%;
+
+		#{$button-amount} {
+			min-width: em(80);
+		}
+	}
+}

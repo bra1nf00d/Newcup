@@ -1,0 +1,16 @@
+.page-article {
+	position: relative;
+	margin-top: em(28);
+	margin-bottom: em(18);
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+	&__title {
+		font-family: $font-family-montserrat;
+		font-weight: 700;
+		font-size: em(17);
+		line-height: em(22);
+	}
+}
